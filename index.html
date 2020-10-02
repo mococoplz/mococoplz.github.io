@@ -1,0 +1,2 @@
+# mococoplz.github.io
+blog
