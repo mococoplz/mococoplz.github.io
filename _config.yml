@@ -103,4 +103,4 @@ theme: landscape
 deploy:
   type: git
   repository: https://github.com/mococoplz/mococoplz.github.io
-  branch: master  # 或者 'gh-pages'，根据你的 GitHub Pages 配置
+  branch: gh-pages  # 或者 'gh-pages'，根据你的 GitHub Pages 配置
