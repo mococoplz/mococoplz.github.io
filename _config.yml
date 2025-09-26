@@ -101,4 +101,6 @@ theme: landscape
 # Deployment
 ## Docs: https://hexo.io/docs/one-command-deployment
 deploy:
-  type: ''
+  type: git
+  repository: https://github.com/mococoplz/mococoplz.github.io
+  branch: master  # 或者 'gh-pages'，根据你的 GitHub Pages 配置
