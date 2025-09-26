@@ -1,0 +1,1 @@
+- `mklink /H "D:\boke\my-blog\source\_posts" "D:\obsidianfile\bokefile"
