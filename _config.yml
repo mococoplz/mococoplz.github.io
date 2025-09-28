@@ -9,6 +9,8 @@ description: ''
 keywords:
 author: John Doe
 language: zh-CN
+
+
 timezone: ''
 
 # URL
@@ -43,17 +45,32 @@ render_drafts: false
 post_asset_folder: false
 relative_link: false
 future: true
-syntax_highlighter: highlight.js
+syntax_highlighter: prismjs
 highlight:
-  line_number: true
-  auto_detect: false
-  tab_replace: ''
-  wrap: true
-  hljs: false
+  enable: true
+  theme:
+    light: prism      # 使用 Prism 浅色主题
+    dark: prism-dark  # 使用 Prism 深色主题
+  line_number: true       # 显示代码行号
+  auto_detect: false      # 禁用自动主题检测
+  tab_replace: ''         # 替换制表符为空
+  wrap: true              # 包裹代码块
+  hljs: false             # 禁用 highlight.js，使用 Prism
+
+  light:
+    background: "#ffffff" # 浅色主题背景色
+    foreground: "#000000" # 浅色主题前景色（文本颜色）
+
+  dark:
+    background: "#2e2e2e" # 深色主题背景色
+    foreground: "#f1f1f1" # 深色主题前景色（文本颜色）
+
 prismjs:
-  preprocess: true
-  line_number: true
-  tab_replace: ''
+  enable: true       # 启用 Prism.js
+  preprocess: true   # 启用预处理
+  line_number: true  # 启用代码行号
+  line_threshold: 0  # 设置行数阈值
+  tab_replace: ''    # 替换制表符的设置
 
 # Home page setting
 # path: Root path for your blogs index page. (default = '')
@@ -105,3 +122,9 @@ deploy:
   type: git
   repository: git@github.com:mococoplz/mococoplz.github.io
   branch: gh-pages  # 或者 'gh-pages'，根据你的 GitHub Pages 配置
+prism_plugin:
+  enable: true         # 启用 Prism 插件
+  preprocess: true     # 启用预处理功能
+  line_number: true    # 显示行号
+  line_threshold: 0    # 设置代码行数阈值
+  tab_replace: '    '  # 替换制表符为空格
